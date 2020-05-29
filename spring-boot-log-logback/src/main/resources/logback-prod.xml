@@ -60,7 +60,7 @@
     <appender name="ASYNC_INFO" class="ch.qos.logback.classic.AsyncAppender">
         <!--不丢失日志.默认的是如果队列的80%已满,则会丢弃TRACE,DEBUG,INFO级别的日志-->
         <discardingThreshold>0</discardingThreshold>
-        <!--队列的深度,默认256-->
+        <!--队列的深度,默认256.该值会影响性能-->
         <queueSize>256</queueSize>
         <!--只能添加一个-->
         <appender-ref ref="INFO_FILE"/>
